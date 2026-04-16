@@ -21,3 +21,4 @@ RUN pnpm add -g pm2
 # Use npx to trigger pm2; it will find the local or global binary automatically
 CMD ["sh", "-c", "npx pm2 start pnpm --name backend -- run start:prod:backend && npx pm2 start pnpm --name frontend -- run start:prod:frontend && npx pm2 logs"]
 
+
